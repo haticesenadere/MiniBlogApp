@@ -1,16 +1,27 @@
 # miniblog
 
-A new Flutter project.
+BackEnd kısmı çalıştığım ilk uygulamam. Küçük Medium işlevi taşıyan, oldukça giriş seviyesinde minik bir blog uygulaması. 
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+The BackEnd part is my first application I worked on. It's a very entry-level tiny blog app that functions as a small Medium. 
 
-## Getting Started
+# Projeyi Çalıştırmak için
 
-This project is a starting point for a Flutter application.
+git clone 
+cd mini blogApp
+flutter pub get
+flutter run 
 
-A few resources to get you started if this is your first Flutter project:
+# HomePage 
+ 
+![Ekran görüntüsü 2023-12-27 170706](https://github.com/haticesenadere/MiniBlogApp/assets/146968990/a3982340-f2f5-480b-bba5-1a5f55252c2a)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Add 
+![Ekran görüntüsü 2023-12-27 170716](https://github.com/haticesenadere/MiniBlogApp/assets/146968990/0d4a1ce2-e1e3-4f9f-81da-86be92c526d8)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Details
+
+![Ekran görüntüsü 2023-12-27 170727](https://github.com/haticesenadere/MiniBlogApp/assets/146968990/64dc2adb-bc0a-4383-8816-9c0a12665d5b)
+
+
+# Bilgi için/ Information
+haticesena47@gmail.com 
