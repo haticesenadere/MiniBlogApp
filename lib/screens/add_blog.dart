@@ -1,8 +1,13 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as http;
+import 'package:miniblog/blocs/article%20blocs/article_bloc.dart';
+import 'package:miniblog/blocs/detail_bloc/article_detail_event.dart';
+import 'package:miniblog/models/blog.dart';
+import 'package:miniblog/repository/article_repository.dart';
 
 class AddBlog extends StatefulWidget {
   const AddBlog({Key? key}) : super(key: key);
@@ -27,7 +32,7 @@ class _AddBlogState extends State<AddBlog> {
     });
   }
 
-  submitForm() async {
+  /* submitForm() async {
     Uri url = Uri.parse("https://tobetoapi.halitkalayci.com/api/Articles");
     var request = http.MultipartRequest("POST", url);
 
@@ -46,7 +51,7 @@ class _AddBlogState extends State<AddBlog> {
       Navigator.pop(context, true);
     }
   }
-
+*/
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -178,7 +183,10 @@ class _AddBlogState extends State<AddBlog> {
                     return;
                   }
                   _formKey.currentState!.save();
-                  submitForm();
+
+                  context
+                      .read<ArticleBloc>()
+                      .add(ArticleAdd(blogadd: Blog(), context: context));
                 }
               },
               child: const Text("Gönder",
